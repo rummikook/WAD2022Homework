@@ -1,0 +1,91 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /*
+       CSS comment
+       The box-sizing CSS property sets how the total width and height of an element are calculated. 
+       If you set box-sizing: border-box; on an element, padding, and border are included in the width and height:
+    */
+}
+
+body{
+    line-height: 1.6;
+    margin: 0;
+}
+
+ul {
+    margin: 2px;
+    padding: 2px;
+    list-style: none;
+}
+
+
+.header{
+    padding: 2px 5px;
+    border: 3px solid #dd5d5100;
+    background-color: #d3eaa2;
+    box-shadow: 0px 0px 14px 0px rgba(68, 49, 24, 0.75);
+    border-radius: 5px;
+}
+
+.navigator {
+    margin-top: 5px;
+}
+
+.navigator a {
+    padding: 20px 20px;
+    text-align: center;
+    display: block;
+    color: #7c6100;
+    font-size: .99em;
+}
+
+.navigator a:hover{
+    background-color: #677a3f;
+    color: #ffffff;
+}
+
+
+@media (min-width: 800px) {
+.header,
+.navigator {
+    display: flex;
+}
+.header {
+    align-items: center;
+    justify-content: space-between;
+}
+}
+
+.grid {
+    margin: 20px auto;
+    padding: 10px 10px;
+    width: 60%;
+    align-self: center;
+    background-color: rgb(160, 160, 160);
+    display: grid;
+    grid-template-rows: 2fr, 1fr;
+    /*     
+      grid-template-columns - the grid-template-columns CSS property defines the numbers and  
+      sizing functions of the grid columns.
+    */
+    gap: 10px 10px;
+    /* 
+    gap: row-gap and column-gap.
+    */
+}
+
+.grid a{
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer{
+    padding: 15px 15px;
+    background-color: #d3eaa2;
+    color: #7c6100;
+    font-size: large;
+    font-weight: bold;
+}
